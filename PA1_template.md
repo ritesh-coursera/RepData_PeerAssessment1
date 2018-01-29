@@ -49,7 +49,7 @@ ggplot(data = grp2, mapping = aes(x = SumByDay)) + geom_histogram()
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](PA1_template_files/figure-html/Task 2-1.png)<!-- -->
+![](PA1_template_files/figure-html/Task%202-1.png)<!-- -->
 
 
 ##Task 3: Mean and median number of steps taken each day
@@ -91,7 +91,7 @@ grp4 <- summarise(grp3,meanByIntAndDay = mean(steps,na.rm = TRUE))
 ggplot(grp4,aes(interval,meanByIntAndDay)) + geom_line()
 ```
 
-![](PA1_template_files/figure-html/Task 4-1.png)<!-- -->
+![](PA1_template_files/figure-html/Task%204-1.png)<!-- -->
 
 
 ##Task 5: The 5-minute interval that, on average, contains the maximum number of steps
@@ -156,7 +156,7 @@ ggplot(data = grp6, mapping = aes(x = SumByDay)) + geom_histogram()
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](PA1_template_files/figure-html/Task 7-1.png)<!-- -->
+![](PA1_template_files/figure-html/Task%207-1.png)<!-- -->
 
 ##Task 8: Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
 
@@ -174,5 +174,5 @@ geom_line(mapping = aes(x = interval, y = meanByIntAndDay)) +
 facet_wrap(~ day, nrow = 2)
 ```
 
-![](PA1_template_files/figure-html/Task 8-1.png)<!-- -->
+![](PA1_template_files/figure-html/Task%208-1.png)<!-- -->
 
